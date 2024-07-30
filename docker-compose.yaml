@@ -15,4 +15,5 @@ services:
               capabilities: [gpu]
     volumes:
       - /home/videoserver/Phase 1 IEEE BMC 2024/Phase 1 Assessment/workdir/Stn_HD_1.mp4:/home/users
-    command: python3 app.py --input=sample.mp4 --output=
+      - /home/videoserer/submissions:/home/users/submissions
+    command: python3 app.py --input=sample.mp4 --output=sample.csv
