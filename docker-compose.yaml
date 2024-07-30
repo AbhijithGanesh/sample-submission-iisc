@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  evaluation:
+    image: prenabhi/sample-submission
+    runtime: nvidia
+    deploy:
+      resources:
+        limits:
+          memory: 64g
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    volumes:
+      - /home/videoserver/Phase 1 IEEE BMC 2024/Phase 1 Assessment/workdir/Stn_HD_1.mp4:/home/users
+    command: python3 app.py --input=sample.mp4 --output=
