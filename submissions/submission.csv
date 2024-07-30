@@ -1,0 +1,8 @@
+Turning Patterns,BC,BE,DE,DA,FA,FC
+Car,1,1,1,1,9,1
+Bus,2,2,2,2,10,2
+Truck,3,3,3,3,10,3
+Three-Wheeler,4,4,4,4,0,4
+Two-Wheeler,5,5,5,5,0,5
+LCV,6,6,6,6,0,6
+Bicycle,7,7,7,7,0,7

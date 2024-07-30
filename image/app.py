@@ -19,7 +19,7 @@ def generate_dummy_csv(output_file):
 			"FC":[1, 2, 3, 4, 5, 6, 7],
 		}
     )
-    dummy_df.to_csv(f"submissions/{output_file}", index=False)
+    dummy_df.to_csv(f"/app/submissions/{output_file}", index=False)
 
 def main():
 	parser = argparse.ArgumentParser(description="Process a video file and generate a dummy CSV output.")
